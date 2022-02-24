@@ -6,75 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Estilo.css">
     <link rel="shortcut icon" href="../img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Contacto</title>
 </head>
 <body>
-    <header data-aos="fade-down">
-        <a href="../index.html"><img src="../img/logo.jpg" alt="logo" height="100px"></a>
-        <nav>
-            <ul>
-                <a href="../index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="catalogo.html">
-                    <li>Catalogo</li>
-                </a>
-                <a href="taller.html">
-                    <li>Nuestro Taller</li>
-                </a>
-                <a href="nosotros.html">
-                    <li>Nosotros</li>
-                </a>
-                <a href="contacto.html">
-                    <li>Contacto</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
+  <header data-aos="fade-down">
+    <a href="../index.html"><img src="../img/logo.jpg" alt="logo" height="100px"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html"><li class="nav-item">Inicio</li></a>
+                    <a class="nav-link" href="catalogo.html"><li class="nav-item">Catalogo</li></a>
+                    <a class="nav-link" href="taller.html"><li class="nav-item">Nuestro Taller</li></a>
+                    <a class="nav-link" href="nosotros.html"><li class="nav-item">Nosotros</li></a>
+                    <a class="nav-link" href="contacto.html"><li class="nav-item">Contacto</li></a>
+                </ul>
+          </div>
+        </div>
+      </nav>
+</header>
     <main>
-        <a class="animate__animated animate__fadeInBottomRight" id="iconoWhatsapp" href="https://api.whatsapp.com/send?phone=+541159055599" target="_blank"><img src="../img/btn_whatsapp.png" alt="logo whatsapp" > </a>
 
-        <form action="" > 
-            <fieldset>
-                <legend>Contacto</legend>
-                <!--<label for="nombre">Nombre:</label>-->
-                <input type="text" placeholder="Nombre" id="nombre">
-                <!--<label for="apellido">Apellido:</label>-->
-                <br>
-                <input type="text" placeholder="Apellido" id="apellido">
-                <!--<label for="email">Correo electronico:</label>-->
-                <br>
-                <input type="text" placeholder="Correo electronico">
-                <br>
-                <textarea name="comentario" placeholder="Escribe tu mensaje..." cols="30" rows="10"></textarea>
-            </fieldset>
-            <input type="submit" value="Enviar Formulario" id="boton">
-            <input type="reset" value="Limpiar" id="boton">
+
+        <a class="animate__animated animate__fadeInBottomRight" id="iconoWhatsapp" href="https://api.whatsapp.com/send?phone=+541159055599" target="_blank"><img src="../img/btn_whatsapp.png" alt="logo whatsapp" > </a>
+        <form>
+          <legend>Contacto</legend>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Apellido">
+          </div>
+          
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label" >Dejanos tu mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="boton" >Enviar Formulario</button>
+          <button type="reset" id="boton">Limpiar</button>
         </form>
     </main>
     <footer  data-aos="fade-up">
-        <nav>
-                <ul>
-                    <a href="../index.html">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="catalogo.html">
-                        <li>Catalogo</li>
-                    </a>
-                    <a href="taller.html">
-                        <li>Nuestro Taller</li>
-                    </a>
-                    <a href="nosotros.html">
-                        <li>Nosotros</li>
-                    </a>
-                    <a href="contacto.html">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html"><li class="nav-item">Inicio</li></a>
+                        <a class="nav-link" href="catalogo.html"><li class="nav-item">Catalogo</li></a>
+                        <a class="nav-link" href="taller.html"><li class="nav-item">Nuestro Taller</li></a>
+                        <a class="nav-link" href="nosotros.html"><li class="nav-item">Nosotros</li></a>
+                        <a class="nav-link" href="contacto.html"><li class="nav-item">Contacto</li></a>
+                    </ul>
+              </div>
+            </div>
+          </nav>
             <div id="RRSS">
                 <a href="https://www.facebook.com/Roxday-102084258366505/" target="_blank"><img src="../img/facebook.png" alt="logo facebook" ></a>
                 <a href="https://www.instagram.com/roxday_mimbre_deco/?hl=es" target="_blank"><img src="../img/instagram.png" alt="logo instagram" ></a>
