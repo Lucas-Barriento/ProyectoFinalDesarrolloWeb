@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to right, #fdf3f4 , #e0c7a1);
+    z-index: 2;
+
+    .container-fluid{
+        justify-content: flex-end !important;
+    }
+    /*nav*/
+    .navbar{
+        background-image: linear-gradient(to right, #fdf3f4 , #e0c7a1);
+        display: flex;
+        justify-content:flex-end !important ;
+        width: 100%; 
+        #navbarNav{
+                /*ul*/
+            .navbar-nav{
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                width: 80%;
+                justify-content: space-around;
+                .nav-link{
+                    text-decoration: none;
+                    color: #fdf3f4;
+                    border-radius: 10px;
+                    .nav-item{
+                        display: flex;
+                        background-image: linear-gradient(to right, #0F2027 , #203A43,#2C5364);
+                        border-radius: 20px;
+                        padding: 5px;
+                        width: 115px;
+                        justify-content: center;
+                        align-content: center;
+                        color: #fdf3f4; 
+                        &:hover {
+                            display: flex;
+                            background-image: linear-gradient(to right,#2C5364, #203A43,#0F2027);
+                            padding: 5px;
+                            transform: scale(1.2,1.2);/*agranda el boton 1.2*/
+                            transition: 1s;
+                       }
+                    }
+                    
+                    
+                }  
+            }
+        
+        }
+    }
+}
+
+/*-------------- MEDIA QUERY --------------*/
+/*MOBILE*/
+
+@media only screen and (max-width:768px){
+    /*header*/
+    ul{
+        flex-flow: column wrap;
+    }
+
+}
+
+/*TABLET*/
+@media only screen and (min-width:768px){
+
+
+}
+
+/*PC*/
+@media only screen and (min-width:1024px){
+ /*header*/
+ ul{
+    flex-flow: row wrap;
+    
+}
+
+}
+
+
+
+
+
+
+
+
+

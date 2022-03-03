@@ -1,0 +1,70 @@
+#grillaCatalogo{
+    font-family: cursive;
+    display: grid;
+    justify-items: center;  
+    padding-left: 80px;
+    padding-right: 80px;
+    div{
+        display: flex;
+        flex-flow: row wrap;
+        width: 200px;
+        height: 225px;
+        justify-content: center;
+        background-color: palevioletred;
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        
+    }
+
+}
+
+/*-------------- MEDIA QUERY --------------*/
+/*MOBILE*/
+
+@media only screen and (max-width:768px){
+    /*catalogo*/ 
+    #grillaCatalogo{
+        justify-content: center;
+        align-content: center;
+        grid-template-columns:1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 25px;  
+    
+    }
+
+
+}
+
+/*TABLET*/
+@media only screen and (min-width:768px){
+    /*catalogo*/
+    #grillaCatalogo{
+        justify-content: center;
+        align-content: center;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        column-gap: 10px;
+        row-gap: 25px;  
+    
+    }
+
+}
+
+/*PC*/
+@media only screen and (min-width:1024px){
+    /*catalogo*/
+    #grillaCatalogo{
+        justify-content: center;
+        align-content: center;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        column-gap: 10px;
+        row-gap: 25px;  
+    
+    }
+
+}
+
