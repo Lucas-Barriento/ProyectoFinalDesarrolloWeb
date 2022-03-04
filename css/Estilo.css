@@ -114,6 +114,7 @@ header {
   background-size: cover;
   background-image: linear-gradient(to right, #fdf3f4, #e0c7a1);
   z-index: 2;
+  opacity: 0.9 !important;
   /*nav*/ }
   header .container-fluid {
     justify-content: flex-end !important; }
@@ -123,6 +124,7 @@ header {
     justify-content: flex-end !important;
     width: 100%; }
     header .navbar #navbarNav {
+      justify-content: center;
       /*ul*/ }
       header .navbar #navbarNav .navbar-nav {
         display: flex;
@@ -425,7 +427,7 @@ body {
       width: 70px;
       height: 70px;
       right: 20px;
-      bottom: 20px;
+      bottom: 80px;
       z-index: 2; }
     body main #iconoWhatsapp img:hover {
       transform: rotate(360deg);

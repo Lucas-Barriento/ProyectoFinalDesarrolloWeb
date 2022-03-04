@@ -1,7 +1,7 @@
 footer {
     background-size: cover;
     text-align: center;
-    background-image: linear-gradient(to right, #fdf3f4 , #e0c7a1);
+    background-image: $coloresFondo
     padding: 7px;
     
     
@@ -26,7 +26,7 @@ footer {
     
     /*nav*/
     .navbar{
-        background-image: linear-gradient(to right, #fdf3f4 , #e0c7a1);
+        background-image: $coloresFondo
         display: flex;
         justify-content:flex-end !important ;
         width: 100%; 
@@ -47,7 +47,7 @@ footer {
                     border-radius: 10px;
                     .nav-item{
                         display: flex;
-                        background-image: linear-gradient(to right, #0F2027 , #203A43,#2C5364);
+                        background-image: $coloresBotones;
                         border-radius: 20px;
                         padding: 5px;
                         width: 115px;
@@ -56,7 +56,7 @@ footer {
                         color: #fdf3f4; 
                         &:hover {
                             display: flex;
-                            background-image: linear-gradient(to right,#2C5364, #203A43,#0F2027);
+                            background-image: $coloresBotonesHover;
                             padding: 5px;
                             transform: scale(1.2,1.2);/*agranda el boton 1.2*/
                             transition: 1s;

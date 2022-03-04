@@ -5,14 +5,15 @@
 @import "catalogo";
 @import "nosotros";
 @import "taller";
+@import "variables";
 
-*{
+*{          
     margin: 0;
     padding: 0;
     border: 0;
 }
 body{
-    background-image: linear-gradient(to right, #fdf3f4 , #e0c7a1);
+    background-image: $coloresFondo;
     main{
         display: flex;
         justify-content: space-around;
@@ -31,7 +32,7 @@ body{
                 width: 70px;
                 height: 70px;
                 right:20px;
-                bottom:20px;
+                bottom:80px;
                 z-index: 2;
             }
             #iconoWhatsapp img:hover {

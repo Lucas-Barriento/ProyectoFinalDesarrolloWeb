@@ -4,8 +4,13 @@
         border: 1px solid black;
         font-family: 'Dancing Script', cursive;
         font-size: calc( 3px + 2vw);
+        background-color: $colorCol;
+        
+        
     }
 }
+
+
 #carouselExampleFade{
     height: 700px !important;
     width: 1200px !important;
@@ -19,6 +24,7 @@
         }
     }
 }
+
 
 
 /*-------------- MEDIA QUERY --------------*/

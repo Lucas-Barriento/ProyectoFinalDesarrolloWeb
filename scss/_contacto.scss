@@ -18,7 +18,7 @@ form {
             display: flex;
             border: 1px solid black;
             margin: 5px 5px 5px 5px;
-            background-image: linear-gradient(to right, #0F2027 , #203A43,#2C5364);
+            background-image: $coloresBotones;
             border-radius: 15px;
             padding: 5px;
             width: auto;
@@ -29,7 +29,7 @@ form {
                 display: flex;
                 border: 1px solid black;
                 margin: 5px 5px 5px 5px;
-                background-image: linear-gradient(to right,#2C5364, #203A43,#0F2027);
+                background-image: $coloresBotonesHover;
                 border-radius: 15px;
                 padding: 5px;
                 width: auto;
@@ -50,7 +50,7 @@ form {
                 &:focus{
                     width: 101%;
                     transition: 1s;
-                    background-image: linear-gradient(to right, white, #fdf3f4 , #e0c7a1);
+                    background-image: $coloresInputTextareaHover;
 
                 }
             }
@@ -58,7 +58,7 @@ form {
                 &:focus{
                     width: 101%;
                     transition: 1s;
-                    background-image: linear-gradient(to right, white, #fdf3f4 , #e0c7a1);
+                    background-image: $coloresInputTextareaHover;
                 }
             }
             
