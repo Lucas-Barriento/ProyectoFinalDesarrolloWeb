@@ -15,32 +15,17 @@ form {
             font-size: 30px;
         }
         #boton {
-            display: flex;
+            @extend .botones;
             border: 1px solid black;
             margin: 5px 5px 5px 5px;
-            background-image: $coloresBotones;
             border-radius: 15px;
-            padding: 5px;
             width: auto;
-            justify-content: center;
-            align-content: center;
-            color: #fdf3f4;
             &:hover {
-                display: flex;
+                @extend .botonesHover;
                 border: 1px solid black;
-                margin: 5px 5px 5px 5px;
-                background-image: $coloresBotonesHover;
                 border-radius: 15px;
-                padding: 5px;
-                width: auto;
-                justify-content: center;
-                align-content: center;
-                
             }
         }
-        
-        
-          
           #exampleFormControlTextarea1{
             height: 180px;
             resize: none;
@@ -51,7 +36,6 @@ form {
                     width: 101%;
                     transition: 1s;
                     background-image: $coloresInputTextareaHover;
-
                 }
             }
             .form-control{
@@ -61,7 +45,6 @@ form {
                     background-image: $coloresInputTextareaHover;
                 }
             }
-            
         }
 
   }

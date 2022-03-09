@@ -5,7 +5,7 @@ header{
     background-size: cover;
     background-image: linear-gradient(to right, #fdf3f4 , #e0c7a1);
     z-index: 2;
-    opacity: 0.8 !important;
+    opacity: 0.9 !important;
 
     .container-fluid{
         justify-content: flex-end !important;
@@ -30,20 +30,12 @@ header{
                     color: #fdf3f4;
                     border-radius: 10px;
                     .nav-item{
-                        display: flex;
-                        background-image: $coloresBotones;
-                        border-radius: 20px;
-                        padding: 5px;
-                        width: 115px;
-                        justify-content: center;
-                        align-content: center;
-                        color: #fdf3f4; 
+                        @extend .botones; 
                         &:hover {
-                            display: flex;
-                            background-image: $coloresBotonesHover;
-                            padding: 5px;
+                            @extend .botonesHover;
                             transform: scale(1.2,1.2);/*agranda el boton 1.2*/
                             transition: 1s;
+                        
                        }
                     }
                     

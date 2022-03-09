@@ -1,10 +1,9 @@
 footer {
     background-size: cover;
     text-align: center;
-    background-image: $coloresFondo
-    padding: 7px;
-    
-    
+    background-image: $coloresFondo;
+    padding: 7px;  
+    opacity: 0.9 !important; 
     img{
         height: 45px;
         margin: 5px;
@@ -26,7 +25,7 @@ footer {
     
     /*nav*/
     .navbar{
-        background-image: $coloresFondo
+        background-image: $coloresFondo;
         display: flex;
         justify-content:flex-end !important ;
         width: 100%; 
@@ -46,18 +45,9 @@ footer {
                     color: #fdf3f4;
                     border-radius: 10px;
                     .nav-item{
-                        display: flex;
-                        background-image: $coloresBotones;
-                        border-radius: 20px;
-                        padding: 5px;
-                        width: 115px;
-                        justify-content: center;
-                        align-content: center;
-                        color: #fdf3f4; 
+                        @extend .botones; 
                         &:hover {
-                            display: flex;
-                            background-image: $coloresBotonesHover;
-                            padding: 5px;
+                            @extend .botonesHover;
                             transform: scale(1.2,1.2);/*agranda el boton 1.2*/
                             transition: 1s;
                         

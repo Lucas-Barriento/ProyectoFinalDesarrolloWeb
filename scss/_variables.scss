@@ -1,5 +1,30 @@
+$colorCol: #fdf3f4;
 $coloresFondo: linear-gradient(to right, #fdf3f4 , #e0c7a1);
 $coloresBotones: linear-gradient(to right, #0F2027 , #203A43,#2C5364);
 $coloresBotonesHover: linear-gradient(to right,#2C5364, #203A43,#0F2027);
 $coloresInputTextareaHover: linear-gradient(to right, white, #fdf3f4 , #e0c7a1);
-$colorCol: #fdf3f4;
+
+.botones{
+    display: flex;
+    background-image: $coloresBotones;
+    border-radius: 20px;
+    padding: 5px;
+    width: 115px;
+    justify-content: center;
+    align-content: center;
+    color: #fdf3f4;
+}
+
+.botonesHover{
+    display: flex;
+    background-image: $coloresBotonesHover;
+    padding: 5px;
+}
+
+@mixin contenedor($display,$justCont,$alignCont,$paddLeft,$paddRight) {
+    display: $display;
+    justify-content: $justCont;
+    align-content: $alignCont;
+    padding-left: $paddLeft;
+    padding-right: $paddRight;
+}

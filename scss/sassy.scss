@@ -1,3 +1,4 @@
+@import "variables";
 @import "index";
 @import "footer";
 @import "header";
@@ -5,13 +6,18 @@
 @import "catalogo";
 @import "nosotros";
 @import "taller";
-@import "variables";
 
 *{          
     margin: 0;
     padding: 0;
     border: 0;
 }
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 50px !important;
+}
+
 body{
     background-image: $coloresFondo;
     main{
@@ -22,10 +28,6 @@ body{
         padding: 7rem 0.5rem 10rem 0.5rem;
         width: auto;
         align-items: center;
-        h1{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-        }
             #iconoWhatsapp{
                 display: flex;
                 position: fixed;
@@ -33,11 +35,12 @@ body{
                 height: 70px;
                 right:20px;
                 bottom:80px;
+                margin: 10px;
                 z-index: 2;
             }
             #iconoWhatsapp img:hover {
                 transform: rotate(360deg);
-                transition: 2s;
+                transition: 1s;
             }
     }
 }
@@ -46,38 +49,20 @@ body{
 
 @media only screen and (max-width:768px){
     h1 {
-        font-size: 40px;
         padding: 75px 50px 50px 50px;
     }
-
-
-
- 
-
-
-
-                    
+                
 }
 
 /*TABLET*/
 @media only screen and (min-width:768px){
  
-
-
-
-
-
 }
 
 /*PC*/
 @media only screen and (min-width:1024px){
     h1 {
-        font-size: 50px;
         padding: 50px;
     }
-   
 
- 
-      
-      
 }

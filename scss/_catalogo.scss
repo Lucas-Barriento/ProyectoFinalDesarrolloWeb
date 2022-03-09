@@ -1,23 +1,19 @@
 #grillaCatalogo{
     font-family: cursive;
-    display: grid;
-    justify-items: center;  
-    padding-left: 80px;
-    padding-right: 80px;
+    @include contenedor(grid,center,center,50px,50px);
+
     div{
         display: flex;
         flex-flow: row wrap;
-        width: 200px;
-        height: 225px;
+        width: 275px;
+        height: 300px;
         justify-content: center;
         background-color: palevioletred;
         img{
-            width: 200px;
-            height: 200px;
+            width: 275px;
+            height: 250px;
         }
-        
     }
-
 }
 
 /*-------------- MEDIA QUERY --------------*/
