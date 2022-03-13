@@ -1,10 +1,10 @@
 $colorCol: #fdf3f4;
-$coloresFondo: linear-gradient(to right, #fdf3f4 , #e0c7a1);
-$coloresBotones: linear-gradient(to right, #0F2027 , #203A43,#2C5364);
-$coloresBotonesHover: linear-gradient(to right,#2C5364, #203A43,#0F2027);
-$coloresInputTextareaHover: linear-gradient(to right, white, #fdf3f4 , #e0c7a1);
+$coloresFondo: linear-gradient(to right, #fdf3f4, #e0c7a1);
+$coloresBotones: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+$coloresBotonesHover: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+$coloresInputTextareaHover: linear-gradient(to right, white, #fdf3f4, #e0c7a1);
 
-.botones{
+.botones {
     display: flex;
     background-image: $coloresBotones;
     border-radius: 20px;
@@ -15,13 +15,13 @@ $coloresInputTextareaHover: linear-gradient(to right, white, #fdf3f4 , #e0c7a1);
     color: #fdf3f4;
 }
 
-.botonesHover{
+.botonesHover {
     display: flex;
     background-image: $coloresBotonesHover;
     padding: 5px;
 }
 
-@mixin contenedor($display,$justCont,$alignCont,$paddLeft,$paddRight) {
+@mixin contenedor($display, $justCont, $alignCont, $paddLeft, $paddRight) {
     display: $display;
     justify-content: $justCont;
     align-content: $alignCont;

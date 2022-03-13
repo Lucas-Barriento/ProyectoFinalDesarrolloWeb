@@ -1,87 +1,88 @@
-
 form {
-        display: flex;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: 20px;
+    margin: 50px;
+    background-color: transparent;
+    width: 750px;
+    align-self: center;
+
+    legend {
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+    }
+
+    #boton {
+        @extend .botones;
         border: 1px solid black;
-        justify-content: center;
-        flex-flow: column nowrap;
-        padding: 20px;
-        margin: 50px;
-        background-color: transparent ;
-        width: 750px;
-        align-self: center;
-        legend{
-            width: 100%;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 30px;
-        }
-        #boton {
-            @extend .botones;
+        margin: 5px 5px 5px 5px;
+        border-radius: 15px;
+        width: auto;
+
+        &:hover {
+            @extend .botonesHover;
             border: 1px solid black;
-            margin: 5px 5px 5px 5px;
             border-radius: 15px;
-            width: auto;
-            &:hover {
-                @extend .botonesHover;
-                border: 1px solid black;
-                border-radius: 15px;
-            }
         }
-          #exampleFormControlTextarea1{
-            height: 180px;
-            resize: none;
-        }
-        .mb-3{
-            input{
-                &:focus{
-                    width: 101%;
-                    transition: 1s;
-                    background-image: $coloresInputTextareaHover;
-                }
-            }
-            .form-control{
-                &:focus{
-                    width: 101%;
-                    transition: 1s;
-                    background-image: $coloresInputTextareaHover;
-                }
+    }
+
+    #exampleFormControlTextarea1 {
+        height: 180px;
+        resize: none;
+    }
+
+    .mb-3 {
+        input {
+            &:focus {
+                width: 101%;
+                transition: 1s;
+                background-image: $coloresInputTextareaHover;
             }
         }
 
-  }
-  
+        .form-control {
+            &:focus {
+                width: 101%;
+                transition: 1s;
+                background-image: $coloresInputTextareaHover;
+            }
+        }
+    }
+
+}
+
 /*-------------- MEDIA QUERY --------------*/
 /*MOBILE*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
     form {
         margin: 100px 0px 0px 0px;
         width: 300px;
     }
-    form input, textarea {
-    width: 250px;
-    margin-top: 15px;
+
+    form input,
+    textarea {
+        width: 250px;
+        margin-top: 15px;
     }
 
 }
 
 /*TABLET*/
-@media only screen and (min-width:768px){
-
-
-}
+@media only screen and (min-width:768px) {}
 
 /*PC*/
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px) {
+
     /*contacto*/
-    form input, textarea {
+    form input,
+    textarea {
         width: 300px;
         margin-top: 10px;
-      }
+    }
 
 
 }
-
-  
-  
-
-    

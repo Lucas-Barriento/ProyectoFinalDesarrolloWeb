@@ -1,11 +1,12 @@
 .col-md-3 {
     border: 1px solid black;
     font-family: 'Dancing Script', cursive;
-    font-size: calc( 1px + 2vw);
+    font-size: calc(10px + 1vw);
     background-color: $colorCol;
 
 }
-#grillaNosotros{
+
+#grillaNosotros {
     display: grid;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
@@ -13,7 +14,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
-    section{
+
+    section {
         border: 1px solid black;
         background-color: #fdf3f4;
     }
@@ -22,9 +24,10 @@
 /*-------------- MEDIA QUERY --------------*/
 /*MOBILE*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
+
     /*nosotros*/
-    #grillaNosotros{
+    #grillaNosotros {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
@@ -33,21 +36,23 @@
 }
 
 /*TABLET*/
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
+
     /*nosotros*/
-    #grillaNosotros{
-        grid-template-rows: 1fr 1fr ;
+    #grillaNosotros {
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
 }
 
 /*PC*/
-@media only screen and (min-width:1024px){
-   /*nosotros*/
-   #grillaNosotros{
-    grid-template-rows: 1fr ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+@media only screen and (min-width:1024px) {
+
+    /*nosotros*/
+    #grillaNosotros {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
 }

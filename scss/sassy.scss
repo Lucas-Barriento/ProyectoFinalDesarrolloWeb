@@ -7,20 +7,22 @@
 @import "nosotros";
 @import "taller";
 
-*{          
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
-.titulo{
+
+.titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 50px !important;
 }
 
-body{
+body {
     background-image: $coloresFondo;
-    main{
+
+    main {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -28,39 +30,40 @@ body{
         padding: 7rem 0.5rem 10rem 0.5rem;
         width: auto;
         align-items: center;
-            #iconoWhatsapp{
-                display: flex;
-                position: fixed;
-                width: 70px;
-                height: 70px;
-                right:20px;
-                bottom:80px;
-                margin: 10px;
-                z-index: 2;
-            }
-            #iconoWhatsapp img:hover {
-                transform: rotate(360deg);
-                transition: 1s;
-            }
+
+        #iconoWhatsapp {
+            display: flex;
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            right: 20px;
+            bottom: 80px;
+            margin: 10px;
+            z-index: 2;
+        }
+
+        #iconoWhatsapp img:hover {
+            transform: rotate(360deg);
+            transition: 1s;
+        }
     }
 }
+
 /*-------------- MEDIA QUERY --------------*/
 /*CELULAR*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
     h1 {
         padding: 75px 50px 50px 50px;
     }
-                
+
 }
 
 /*TABLET*/
-@media only screen and (min-width:768px){
- 
-}
+@media only screen and (min-width:768px) {}
 
 /*PC*/
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px) {
     h1 {
         padding: 50px;
     }

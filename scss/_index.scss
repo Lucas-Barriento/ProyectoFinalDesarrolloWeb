@@ -1,24 +1,26 @@
-#rowIndex{
+#rowIndex {
     justify-content: space-evenly;
+    font-family: 'Dancing Script', cursive;
+    font-size: calc(10px + 1vw);
+
     .col-md-3 {
         border: 1px solid black;
-        font-family: 'Dancing Script', cursive;
-        font-size: calc( 3px + 2vw);
         background-color: $colorCol;
     }
 }
 
 
-#carouselExampleFade{
+#carouselExampleFade {
     height: 700px !important;
     width: 1200px !important;
-    .carousel-item{
+
+    .carousel-item {
         height: 700px !important;
         width: 1200px !important;
-    
-        img{
+
+        img {
             height: 100%;
-            width: 100%;    
+            width: 100%;
         }
     }
 }
@@ -28,39 +30,41 @@
 /*-------------- MEDIA QUERY --------------*/
 /*MOBILE*/
 
-@media only screen and (max-width:768px){
-    #grillaIndex{
+@media only screen and (max-width:768px) {
+    #grillaIndex {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "i1"
-                             "i2"
-                             "i3"
-                             "i4"    ;
+            "i2"
+            "i3"
+            "i4";
     }
 }
 
 /*TABLET*/
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
+
     /*index*/
-    #grillaIndex{
-        grid-template-rows: 1fr 1fr ;
+    #grillaIndex {
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr fr;
         grid-template-areas: "i1 i1 i1"
-                             "i2 i3 i4"    ;
+            "i2 i3 i4";
 
     }
 
 }
 
 /*PC*/
-@media only screen and (min-width:1024px){
-/*index*/
-#grillaIndex{
-    grid-template-rows: 1fr ;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "i1 i1 i1"
-                         "i2 i3 i4"    ;
+@media only screen and (min-width:1024px) {
 
-}
+    /*index*/
+    #grillaIndex {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "i1 i1 i1"
+            "i2 i3 i4";
+
+    }
 
 }
