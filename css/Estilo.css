@@ -24,24 +24,23 @@
 #rowImg {
   margin: 10px; }
 
-#carouselExampleFade {
-  height: 700px !important;
-  width: 1200px !important;
-  margin-top: 10px !important; }
-  #carouselExampleFade .carousel-item {
-    height: 700px !important;
-    width: 1200px !important; }
-    #carouselExampleFade .carousel-item img {
-      height: 100%;
-      width: 100%; }
-
 /*-------------- MEDIA QUERY --------------*/
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
   #grillaIndex {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "i1" "i2" "i3" "i4"; } }
+    grid-template-areas: "i1" "i2" "i3" "i4"; }
+  #carouselExampleFade {
+    height: 300px !important;
+    max-width: 768px !important;
+    margin-top: 10px !important; }
+    #carouselExampleFade .carousel-item {
+      height: 300px !important;
+      width: 768px !important; }
+      #carouselExampleFade .carousel-item img {
+        height: 100%;
+        width: 100%; } }
 
 /*TABLET*/
 @media only screen and (min-width: 768px) {
@@ -49,7 +48,17 @@
   #grillaIndex {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr fr;
-    grid-template-areas: "i1 i1 i1" "i2 i3 i4"; } }
+    grid-template-areas: "i1 i1 i1" "i2 i3 i4"; }
+  #carouselExampleFade {
+    height: 500px !important;
+    width: 768px !important;
+    margin-top: 10px !important; }
+    #carouselExampleFade .carousel-item {
+      height: 500px !important;
+      width: 768px !important; }
+      #carouselExampleFade .carousel-item img {
+        height: 100%;
+        width: 100%; } }
 
 /*PC*/
 @media only screen and (min-width: 1024px) {
@@ -57,7 +66,17 @@
   #grillaIndex {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "i1 i1 i1" "i2 i3 i4"; } }
+    grid-template-areas: "i1 i1 i1" "i2 i3 i4"; }
+  #carouselExampleFade {
+    height: 700px !important;
+    width: 1200px !important;
+    margin-top: 10px !important; }
+    #carouselExampleFade .carousel-item {
+      height: 700px !important;
+      width: 1200px !important; }
+      #carouselExampleFade .carousel-item img {
+        height: 100%;
+        width: 100%; } }
 
 footer {
   background-size: cover;

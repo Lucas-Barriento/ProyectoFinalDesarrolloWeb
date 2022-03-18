@@ -1,7 +1,6 @@
 #rowIndex {
     justify-content: space-evenly;
     .col-md-3 {
-
         border: 1px solid black;
         background-color: $colorCol;
         font-family: 'Dancing Script', cursive;
@@ -12,21 +11,7 @@
     margin: 10px;
 }
 
-#carouselExampleFade {
-    height: 700px !important;
-    width: 1200px !important;
-    margin-top: 10px !important;
 
-    .carousel-item {
-        height: 700px !important;
-        width: 1200px !important;
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
-    }
-}
 
 
 
@@ -42,6 +27,21 @@
             "i3"
             "i4";
     }
+    #carouselExampleFade {
+        height: 300px !important;
+        max-width: 768px !important;
+        margin-top: 10px !important;
+    
+        .carousel-item {
+            height: 300px !important;
+            width: 768px !important;
+    
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
 }
 
 /*TABLET*/
@@ -54,6 +54,21 @@
         grid-template-areas: "i1 i1 i1"
             "i2 i3 i4";
 
+    }
+    #carouselExampleFade {
+        height: 500px !important;
+        width: 768px !important;
+        margin-top: 10px !important;
+    
+        .carousel-item {
+            height: 500px !important;
+            width: 768px !important;
+    
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 
 }
@@ -68,6 +83,20 @@
         grid-template-areas: "i1 i1 i1"
             "i2 i3 i4";
 
+    }
+    #carouselExampleFade {
+        height: 700px !important;
+        width: 1200px !important;
+        margin-top: 10px !important;
+    
+        .carousel-item {
+            height: 700px !important;
+            width: 1200px !important;
+                img {
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 
 }
