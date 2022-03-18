@@ -1,18 +1,21 @@
 #rowIndex {
     justify-content: space-evenly;
-    font-family: 'Dancing Script', cursive;
-    font-size: calc(10px + 1vw);
-
     .col-md-3 {
+
         border: 1px solid black;
         background-color: $colorCol;
+        font-family: 'Dancing Script', cursive;
+        font-size: calc(10px + 1vw);
     }
 }
-
+#rowImg{
+    margin: 10px;
+}
 
 #carouselExampleFade {
     height: 700px !important;
     width: 1200px !important;
+    margin-top: 10px !important;
 
     .carousel-item {
         height: 700px !important;
