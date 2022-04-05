@@ -10,15 +10,16 @@
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 10px;
-        &:hover{
+
+        &:hover {
             transition: .1s linear;
             transform: scale(1.1, 1.1);
             font-weight: bold;
-            }
+        }
     }
 
     #colImg {
-        padding: 10px 0  10px 0; 
+        padding: 10px 0 10px 0;
 
         #rowImg {
             height: 100%;

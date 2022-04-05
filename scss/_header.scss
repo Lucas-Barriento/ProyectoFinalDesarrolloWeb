@@ -1,7 +1,8 @@
 header {
-    #logo{
+    #logo {
         margin: 10px 0px 0px 10px;
     }
+
     display: flex;
     position: fixed;
     width: 100%;
@@ -42,6 +43,7 @@ header {
                     .nav-item {
                         @extend .botones;
                         font-weight: bold;
+
                         &:hover {
                             @extend .botonesHover;
                             transform: scale(1.2, 1.2);
@@ -49,8 +51,8 @@ header {
                             transition: .1s linear;
                             color: white;
                             text-shadow: 0 0 20px white,
-                                         0 0 40px white;
-                    
+                                0 0 40px white;
+
 
 
                         }

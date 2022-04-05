@@ -4,6 +4,7 @@ footer {
     background-image: $coloresFondo;
     padding: 7px;
     opacity: 0.9 !important;
+
     img {
         height: 45px;
         margin: 5px;
@@ -18,9 +19,10 @@ footer {
         a {
             margin: 10px;
             transition: .1s linear;
+
             &:hover {
                 transform: scale(1.5, 1.5);
-                
+
             }
         }
 
@@ -61,9 +63,9 @@ footer {
                             color: black;
                             font-weight: bold;
                             text-shadow: 0 0 10px white,
-                                         0 0 20px white,
-                                         0 0 40px white;
-                    
+                                0 0 20px white,
+                                0 0 40px white;
+
 
                         }
                     }
