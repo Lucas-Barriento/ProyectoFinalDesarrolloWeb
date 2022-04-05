@@ -1,14 +1,40 @@
 #rowIndex {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    color: rgb(83, 83, 83);
+
     .col-md-3 {
         border: 1px solid black;
         background-color: $colorCol;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Permanent Marker', cursive;
         font-size: calc(10px + 1vw);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        &:hover{
+            transition: .1s linear;
+            transform: scale(1.1, 1.1);
+            font-weight: bold;
+            }
     }
+
+    #colImg {
+        padding: 10px 0  10px 0; 
+
+        #rowImg {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
 }
-#rowImg{
-    margin: 10px;
+
+
+#indexText {
+    p {
+        font-size: 30px;
+        font-family: cursive;
+    }
+
 }
 
 
@@ -27,15 +53,16 @@
             "i3"
             "i4";
     }
+
     #carouselExampleFade {
         height: 300px !important;
         max-width: 768px !important;
         margin-top: 10px !important;
-    
+
         .carousel-item {
             height: 300px !important;
             width: 768px !important;
-    
+
             img {
                 height: 100%;
                 width: 100%;
@@ -55,15 +82,16 @@
             "i2 i3 i4";
 
     }
+
     #carouselExampleFade {
         height: 500px !important;
         width: 768px !important;
         margin-top: 10px !important;
-    
+
         .carousel-item {
             height: 500px !important;
             width: 768px !important;
-    
+
             img {
                 height: 100%;
                 width: 100%;
@@ -84,19 +112,25 @@
             "i2 i3 i4";
 
     }
+
     #carouselExampleFade {
-        height: 700px !important;
-        width: 1200px !important;
-        margin-top: 10px !important;
-    
-        .carousel-item {
-            height: 700px !important;
-            width: 1200px !important;
+        height: 900px;
+        min-width: 1024px;
+        max-width: 1200px;
+        margin-top: 10px;
+
+        .carousel-inner {
+
+            .carousel-item {
                 img {
-                height: 100%;
-                width: 100%;
+                    height: inherit;
+                    min-width: 1024px;
+                    max-width: inherit;
+                }
+
             }
         }
+
     }
 
 }

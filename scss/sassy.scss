@@ -14,9 +14,18 @@
 }
 
 .titulo {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #484848;
+    font-family: 'Alfa Slab One', cursive;
     text-align: center;
-    font-size: 50px !important;
+    font-size: 65px;
+    transition: .2s linear;
+    &:hover{
+        color: 484848;
+        text-shadow: 0 0 20px white,
+                     0 0 40px white;
+        font-size: 70px;
+        
+    }
 }
 
 body {

@@ -1,10 +1,32 @@
 #rowNosotros{
-    justify-content: space-evenly;
-
-    .col-md-2 {
-        border: 1px solid black;
-        font-family: 'Dancing Script', cursive;
-        font-size: calc(4px + 1vw);
-        background-color: $colorCol;
+    justify-content: space-evenly;  
+.card{
+    transition: .2s linear;
+    &:hover{
+        transform: scale(1.15, 1.15);
+        font-weight: bold;
     }
+
 }
+
+    .card-body{
+        background-color: $colorCol ;
+    
+
+    }
+    .card-text{
+        font-family: 'Dancing Script', cursive ;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+.card{
+    width: inherit !important;
+}
+
+}
+
+
+
+

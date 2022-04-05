@@ -20,6 +20,8 @@ header {
         display: flex;
         justify-content: flex-end !important;
         width: 100%;
+        text-transform: uppercase;
+
 
         #navbarNav {
             justify-content: center;
@@ -39,12 +41,17 @@ header {
 
                     .nav-item {
                         @extend .botones;
-
+                        font-weight: bold;
                         &:hover {
                             @extend .botonesHover;
                             transform: scale(1.2, 1.2);
                             /*agranda el boton 1.2*/
-                            transition: 1s;
+                            transition: .1s linear;
+                            color: white;
+                            text-shadow: 0 0 20px white,
+                                         0 0 40px white;
+                    
+
 
                         }
                     }
